@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Byatis|Win32">
+      <Configuration>Debug_Byatis</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Byatis|Win32">
+      <Configuration>Release_Byatis</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CADA9F52-290B-48D3-822F-0E6B5983D54D}</ProjectGuid>
+    <RootNamespace>LifeLike</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Byatis|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Byatis|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Byatis|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Byatis|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Byatis|Win32'">bin\Debug_Byatis\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Byatis|Win32'">obj\Debug_Byatis\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_Byatis|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Byatis|Win32'">bin\Release_Byatis\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Byatis|Win32'">obj\Release_Byatis\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Byatis|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;$(OGRE_SDK_PATH)\include;$(OGRE_SDK_PATH)\include\OGRE;$(OGRE_SDK_PATH)\include\CEGUI;$(OGRE_SDK_PATH)\samples\include;$(OPENAL_SDK_PATH)\include;$(FREEALUT_SDK_PATH)\include;$(BASS_SDK_PATH)\c;$(BOOST_SDK_PATH);$(PYTHON_SDK_PATH)\include;$(CEGUI_SDK_PATH)\cegui\include;$(ProgramFiles)\Microsoft Speech SDK 5.1\Include;$(WORDNET_SDK_PATH)\include;$(SFPARSER_SDK)\include;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BOOST_ALL_DYN_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;CEGUIBase_d.lib;CEGUIOgreRenderer_d.lib;sapi.lib;OpenAL32.lib;alut.lib;bass.lib;d3dx9d.lib;wn.lib;CSFParser_d.lib;jvm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_SDK_PATH)\lib\debug;$(CEGUI_SDK_PATH)\lib;$(OPENAL_SDK_PATH)\libs\Win32;$(FREEALUT_SDK_PATH)\lib\debug;$(BASS_SDK_PATH)\c;$(BOOST_SDK_PATH)\stage\lib;$(PYTHON_SDK_PATH)\libs;$(DXSDK_DIR)\lib\x86;$(ProgramFiles)\Microsoft Speech SDK 5.1\lib\i386;$(WORDNET_SDK_PATH)\lib\debug;$(SFPARSER_SDK)\lib\debug;$(JAVA_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ForceSymbolReferences>__DllMainCRTStartup%4012;%(ForceSymbolReferences)</ForceSymbolReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)LifeLike.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "res\win\LifeLike.cfg" "bin\debug"
+copy "res\LifeLike_Scene.xml" "bin\debug"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Byatis|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;$(OGRE_SDK_BYATIS_PATH)\include;$(OGRE_SDK_BYATIS_PATH)\include\OGRE;$(OGRE_SDK_BYATIS_PATH)\include\CEGUI;$(OGRE_SDK_BYATIS_PATH)\samples\include;$(OPENAL_SDK_PATH)\include;$(FREEALUT_SDK_PATH)\include;$(BASS_SDK_PATH)\c;$(BOOST_SDK_PATH);$(PYTHON_SDK_PATH)\include;$(CEGUI_SDK_BYATIS_PATH)\cegui\include;$(ProgramFiles)\Microsoft Speech SDK 5.1\Include;$(WORDNET_SDK_PATH)\include;$(SFPARSER_SDK)\include;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32;$(CRF_SDK_PATH)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BOOST_ALL_DYN_LINK;LIFELIKEMAINAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;CEGUIBase_d.lib;CEGUIOgreRenderer_d.lib;sapi.lib;OpenAL32.lib;alut.lib;bass.lib;d3dx9d.lib;wn.lib;CSFParser_d.lib;jvm.lib;crf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_SDK_BYATIS_PATH)\lib\debug;$(CEGUI_SDK_BYATIS_PATH)\lib;$(OPENAL_SDK_PATH)\libs\Win32;$(FREEALUT_SDK_PATH)\lib\debug;$(BASS_SDK_PATH)\c;$(BOOST_SDK_PATH)\stage\lib;$(PYTHON_SDK_PATH)\libs;$(DXSDK_DIR)\lib\x86;$(ProgramFiles)\Microsoft Speech SDK 5.1\lib\i386;$(WORDNET_SDK_PATH)\lib\debug;$(SFPARSER_SDK)\lib\debug;$(JAVA_HOME)\lib;$(CRF_SDK_PATH)\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ForceSymbolReferences>__DllMainCRTStartup%4012;%(ForceSymbolReferences)</ForceSymbolReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)LifeLike.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "res\win\LifeLike.cfg" "bin\debug"
+copy "res\LifeLike_Scene.xml" "bin\debug"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>include;$(OGRE_SDK_PATH)\include\OGRE;$(CEGUI_SDK_PATH)\cegui\include;$(OGRE_SDK_PATH)\include;$(OGRE_SDK_PATH)\samples\include;$(OPENAL_SDK_PATH)\include;$(FREEALUT_SDK_PATH)\include;$(BASS_SDK_PATH)\c;$(PYTHON_SDK_PATH)\include;$(BOOST_SDK_PATH);$(ProgramFiles)\Microsoft Speech SDK 5.1\Include;$(WORDNET_SDK_PATH)\include;$(SFPARSER_SDK)\include;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BOOST_ALL_DYN_LINK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;CEGUIBase.lib;CEGUIOgreRenderer.lib;sapi.lib;OpenAL32.lib;alut.lib;bass.lib;d3dx9.lib;boost_python-vc100-mt-1_45.lib;wn.lib;CSFParser.lib;jvm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_SDK_PATH)\lib\release;$(CEGUI_SDK_PATH)\lib;$(OPENAL_SDK_PATH)\libs\Win32;$(FREEALUT_SDK_PATH)\lib\release;$(BASS_SDK_PATH)\c;$(BOOST_SDK_PATH)\stage\lib;$(PYTHON_SDK_PATH)\libs;$(ProgramFiles)\Microsoft Speech SDK 5.1\lib\i386;$(DXSDK_DIR)\lib\x86;$(WORDNET_SDK_PATH)\lib\release;$(SFPARSER_SDK)\lib\release;$(JAVA_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "res\win\LifeLike.cfg" "bin\release"
+copy "res\LifeLike_Scene.xml" "bin\release"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Byatis|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>include;$(OGRE_SDK_BYATIS_PATH)\include\OGRE;$(CEGUI_SDK_BYATIS_PATH)\cegui\include;$(OGRE_SDK_BYATIS_PATH)\include;$(OGRE_SDK_BYATIS_PATH)\samples\include;$(OPENAL_SDK_PATH)\include;$(FREEALUT_SDK_PATH)\include;$(BASS_SDK_PATH)\c;$(PYTHON_SDK_PATH)\include;$(BOOST_SDK_PATH);$(ProgramFiles)\Microsoft Speech SDK 5.1\Include;$(WORDNET_SDK_PATH)\include;$(SFPARSER_SDK)\include;$(JAVA_HOME)\include;$(JAVA_HOME)\include\win32;$(CRF_SDK_PATH)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BOOST_ALL_DYN_LINK;LIFELIKEMAINAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;CEGUIBase.lib;CEGUIOgreRenderer.lib;sapi.lib;OpenAL32.lib;alut.lib;bass.lib;d3dx9.lib;boost_python-vc100-mt-1_45.lib;wn.lib;CSFParser.lib;jvm.lib;crf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_SDK_BYATIS_PATH)\lib\release;$(CEGUI_SDK_BYATIS_PATH)\lib;$(OPENAL_SDK_PATH)\libs\Win32;$(FREEALUT_SDK_PATH)\lib\release;$(BASS_SDK_PATH)\c;$(BOOST_SDK_PATH)\stage\lib;$(PYTHON_SDK_PATH)\libs;$(ProgramFiles)\Microsoft Speech SDK 5.1\lib\i386;$(DXSDK_DIR)\lib\x86;$(WORDNET_SDK_PATH)\lib\release;$(SFPARSER_SDK)\lib\release;$(JAVA_HOME)\lib;$(CRF_SDK_PATH)\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "res\win\LifeLike.cfg" "bin\release"
+copy "res\LifeLike_Scene.xml" "bin\release"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BaseApplication.cpp" />
+    <ClCompile Include="src\LifeLike.cpp" />
+    <ClCompile Include="src\LLActivityBase.cpp" />
+    <ClCompile Include="src\LLActivityManager.cpp" />
+    <ClCompile Include="src\LLAffectAnalyzer.cpp" />
+    <ClCompile Include="src\LLAniManager.cpp" />
+    <ClCompile Include="src\LLAnimation.cpp" />
+    <ClCompile Include="src\LLAnimationBlender.cpp" />
+    <ClCompile Include="src\LLAnimationEntity.cpp" />
+    <ClCompile Include="src\LLAudioMonitor.cpp" />
+    <ClCompile Include="src\LLCharacter.cpp" />
+    <ClCompile Include="src\LLCRFTagger.cpp" />
+    <ClCompile Include="src\LLdefine.cpp" />
+    <ClCompile Include="src\LLEmotionProcessor.cpp" />
+    <ClCompile Include="src\LLEntity.cpp" />
+    <ClCompile Include="src\LLEyeController.cpp" />
+    <ClCompile Include="src\LLFACSDB.cpp" />
+    <ClCompile Include="src\LLFFTSound.cpp" />
+    <ClCompile Include="src\LLFSM.cpp" />
+    <ClCompile Include="src\LLFSMState.cpp" />
+    <ClCompile Include="src\LLGUIManager.cpp" />
+    <ClCompile Include="src\LLHeadController.cpp" />
+    <ClCompile Include="src\LLItem.cpp" />
+    <ClCompile Include="src\LLMicMonitor.cpp" />
+    <ClCompile Include="src\LLNavigator.cpp" />
+    <ClCompile Include="src\LLNVBEngine.cpp" />
+    <ClCompile Include="src\LLSceneManager.cpp" />
+    <ClCompile Include="src\LLScreenLog.cpp" />
+    <ClCompile Include="src\LLSound.cpp" />
+    <ClCompile Include="src\LLSoundManager.cpp" />
+    <ClCompile Include="src\LLSpeechAffectAnalyzer.cpp" />
+    <ClCompile Include="src\LLSpeechRecognizer.cpp" />
+    <ClCompile Include="src\LLStanfordParser.cpp" />
+    <ClCompile Include="src\LLUnicodeUtil.cpp" />
+    <ClCompile Include="src\LLWordNetAffect.cpp" />
+    <ClCompile Include="src\tinyxml2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BaseApplication.h" />
+    <ClInclude Include="include\LifeLike.h" />
+    <ClInclude Include="include\LLActivityBase.h" />
+    <ClInclude Include="include\LLActivityManager.h" />
+    <ClInclude Include="include\LLAffectAnalyzer.h" />
+    <ClInclude Include="include\LLAniManager.h" />
+    <ClInclude Include="include\LLAnimation.h" />
+    <ClInclude Include="include\LLAnimationBlender.h" />
+    <ClInclude Include="include\LLAnimationEntity.h" />
+    <ClInclude Include="include\LLAudioMonitor.h" />
+    <ClInclude Include="include\LLCallBack.h" />
+    <ClInclude Include="include\LLCharacter.h" />
+    <ClInclude Include="include\LLCRFTagger.h" />
+    <ClInclude Include="include\LLdefine.h" />
+    <ClInclude Include="include\LLEmotionProcessor.h" />
+    <ClInclude Include="include\LLEntity.h" />
+    <ClInclude Include="include\LLEyeController.h" />
+    <ClInclude Include="include\LLFACSDB.h" />
+    <ClInclude Include="include\LLFFTSound.h" />
+    <ClInclude Include="include\LLFSM.h" />
+    <ClInclude Include="include\LLFSMState.h" />
+    <ClInclude Include="include\LLGUIManager.h" />
+    <ClInclude Include="include\LLHeadController.h" />
+    <ClInclude Include="include\LLItem.h" />
+    <ClInclude Include="include\LLMicMonitor.h" />
+    <ClInclude Include="include\LLNavigator.h" />
+    <ClInclude Include="include\LLNVBEngine.h" />
+    <ClInclude Include="include\LLSceneManager.h" />
+    <ClInclude Include="include\LLScreenLog.h" />
+    <ClInclude Include="include\LLSound.h" />
+    <ClInclude Include="include\LLSoundManager.h" />
+    <ClInclude Include="include\LLSpeechAffectAnalyzer.h" />
+    <ClInclude Include="include\LLSpeechRecognizer.h" />
+    <ClInclude Include="include\LLStanfordParser.h" />
+    <ClInclude Include="include\LLUnicodeUtil.h" />
+    <ClInclude Include="include\LLWordNetAffect.h" />
+    <ClInclude Include="include\tinyxml2.h" />
+    <ClInclude Include="res\Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LifeLike.ico" />
+    <None Include="res\LifeLike_Scene.xml" />
+    <None Include="docs\README.txt" />
+    <None Include="docs\Shpes_Note.txt" />
+    <None Include="res\win\LifeLike.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\LifeLike.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

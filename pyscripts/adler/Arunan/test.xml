@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" initial="reset">
+ <!-- http://commons.apache.org/scxml -->
+ <state id="reset">
+  <transition event="watch_start:start the watch:start:go:run the watch" target="running">
+   <send namelist="the time now is 11:28 pm,do you need anything else" event="speak">
+   </send>
+  </transition>
+ </state>
+ <state id="running">
+  <transition event="watch_split" target="paused">
+  </transition>
+  <transition event="watch_stop" target="stopped">
+  </transition>
+ </state>
+ <state id="paused">
+  <transition event="watch_unsplit" target="running">
+  </transition>
+  <transition event="watch_stop" target="stopped">
+  </transition>
+ </state>
+ <state id="stopped">
+  <transition event="watch_reset" target="reset">
+  </transition>
+ </state>
+ <state id="root">
+  <transition event="transition_event1" target="reset">
+  </transition>
+ </state>
+ <state id="new_state1">
+  <transition event="transition_event1" target="new_state3">
+  </transition>
+  <transition event="transition_event2" target="reset">
+  </transition>
+ </state>
+ <state id="new_state2">
+  <transition event="transition_event3" target="new_state1">
+  </transition>
+ </state>
+ <state id="new_state3">
+ </state>
+</scxml>

@@ -1,0 +1,37 @@
+# dataset confiugration file
+# for each dataset
+#
+# Data
+# name		: name of dataset
+# Resolution x, y				: MC dataset image resolution
+# Scale s						: MC dataset scale
+# Translate x, y				: MC dataset offset value
+# Simulator_Image image			: sample image for the tool
+# Whiteboard_Image image		: whiteboard image for the data
+# tour xxx.tour					: tour description file. if no file, leave as blank
+
+Server
+Address 131.193.77.157
+Resolution 1920 1080
+
+Data
+NameOnDisk carina_hst
+Name Carina_Nebula
+Size 29566 14321
+Scale 0.050000
+Translate -900 0
+Simulator_Image carina_small.jpg
+Whiteboard_Image carina01.jpg
+tour Carina_Nebula.tour
+<carina_sky.jpg>When looking up into the sky the Kuhreenah nebula looks like this photo next to me. On the wall you see a high-resolution false color image composed of 48 different photos taken by the Hubble Space Telescope. In this false color image Red shows sulfur, green shows hydrogen, and blue shows oxygen, making it easier to see the structure and components of the nebula.
+
+Data
+NameOnDisk cdfs_hgast
+Name Hubble_Ultra_Deep_Field
+Size 32195 19464
+Scale 0.036790
+Translate 900 0
+Simulator_Image cdfs_small.jpg
+Whiteboard_Image cdfs.jpg
+tour CDFS.tour
+<cdfs.jpg>The Hubble Ultra Deep Field is an image taken by the Chandra X-ray Observatory satellite. The image was created by compositing 11 individual ACIS-I exposures for a cumulative exposure time of over one million seconds, in the period 1999-2000.

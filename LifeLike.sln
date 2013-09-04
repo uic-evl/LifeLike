@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LifeLike", "LifeLike.vcxproj", "{CADA9F52-290B-48D3-822F-0E6B5983D54D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LifeLikeInstaller", "..\Installer\LifeLikeInstaller\LifeLikeInstaller.vdproj", "{08DA1756-30E7-4E1C-9465-56B62B240505}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D} = {CADA9F52-290B-48D3-822F-0E6B5983D54D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Byatis|Win32 = Debug_Byatis|Win32
+		Debug|Win32 = Debug|Win32
+		Release_Byatis|Win32 = Release_Byatis|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Debug_Byatis|Win32.ActiveCfg = Debug_Byatis|Win32
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Debug_Byatis|Win32.Build.0 = Debug_Byatis|Win32
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Debug|Win32.Build.0 = Debug|Win32
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Release_Byatis|Win32.ActiveCfg = Release_Byatis|Win32
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Release_Byatis|Win32.Build.0 = Release_Byatis|Win32
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Release|Win32.ActiveCfg = Release|Win32
+		{CADA9F52-290B-48D3-822F-0E6B5983D54D}.Release|Win32.Build.0 = Release|Win32
+		{08DA1756-30E7-4E1C-9465-56B62B240505}.Debug_Byatis|Win32.ActiveCfg = Debug_Byatis
+		{08DA1756-30E7-4E1C-9465-56B62B240505}.Debug|Win32.ActiveCfg = Debug
+		{08DA1756-30E7-4E1C-9465-56B62B240505}.Release_Byatis|Win32.ActiveCfg = Release_Byatis
+		{08DA1756-30E7-4E1C-9465-56B62B240505}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

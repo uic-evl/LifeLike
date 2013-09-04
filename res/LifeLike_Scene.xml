@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<LifeLikeScene ver="1.0">
+  
+  <!-- General Scene setting -->
+  <General>
+    
+    <!-- Screen Pixel Ratio -->
+    <AspectRatio ratio="1.778" desc="HD Screen"/>
+    <!-- AspectRatio ratio="1.333" desc="Common 4:3 Screen"></AspectRatio -->
+    
+    <!-- Size of Screen in centimeter (only for main display screen) -->
+    <ScreenSize x="32" y="24"/>
+    
+  </General>
+  <!-- End of General Scene setting -->
+  
+  <!-- Detailed Scene Components -->
+  <Scene>
+    
+    <!-- Defines Cameras -->
+    <Cameras>
+      <Camera id="0" name="PlayerPrimaryCam">
+        <Position x="0" y="107" z="177"></Position>
+        <LookAt x="0" y="104" z="105"></LookAt>
+      </Camera>
+    </Cameras>
+    
+    <!-- Defines Lights -->
+    <Lights>
+      <Light id="0" name="MainLight" type="LT_DIRECTIONAL">
+        <Direction x="-1" y="-0.7" z="-1"></Direction>
+        <Color r="1" g="1" b="1"></Color>
+      </Light>
+      <Light id="1" name="SecondLight" type="LT_DIRECTIONAL">
+        <Direction x="1" y="0" z="-1"></Direction>
+        <Color r="0.7" g="0.7" b="0.7"></Color>
+      </Light>
+    </Lights>
+    
+    <!-- Object List -->
+    <Objects>
+      
+      <!-- Character List -->
+      <Characters>
+        <Character id="0" name="Mike" file="..\\..\\media\\Lifelike\\mike.xml"></Character>
+      </Characters>
+      
+      <!-- Static Object List -->
+      <StaticObjects>
+        <Object name="lifelike_bg" mesh="alex_background.mesh">
+          <Position x="5" y="-35" z="-20"></Position>
+          <Rotation x="0" y="180" z="0"></Rotation>
+          <Scale x="1" y="1" z="1"></Scale>
+        </Object>
+      </StaticObjects>
+      <!-- End of Static Ojbect -->
+      
+      <!-- Whiteboard Object -->
+      <Whiteboard>
+        <Object name="LLWhiteboard" mesh="display.mesh">
+          <Position x="2.5" y="-30" z="-20"></Position>
+          <Rotation x="0" y="0" z="0"></Rotation>
+          <Scale x="1.45" y="1.45" z="1.0"></Scale>
+        </Object>
+      </Whiteboard>
+      
+    </Objects>
+    <!-- End of Object List -->
+    
+    <!-- Sound Files -->
+    <Sounds>
+      <Backgrounds>
+      </Backgrounds>
+      <Effects>
+      </Effects>
+    </Sounds>
+  
+  </Scene>
+  <!-- End of Detailed Scene Components -->
+  
+</LifeLikeScene>

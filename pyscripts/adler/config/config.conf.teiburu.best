@@ -1,0 +1,172 @@
+# dataset confiugration file
+# for each dataset
+#
+# Data
+# name		: name of dataset
+# Resolution x, y				: MC dataset image resolution
+# Scale s						: MC dataset scale
+# Translate x, y				: MC dataset offset value
+# Simulator_Image image			: sample image for the tool
+# Whiteboard_Image image		: whiteboard image for the data
+# tour xxx.tour					: tour description file. if no file, leave as blank
+
+Server
+Address 131.193.78.172
+Resolution 7680 3200
+
+Data
+NameOnDisk carina_hst
+Name Carina_Nebula
+Size 29566 14321
+Scale 1.0
+Translate 0 0
+Simulator_Image carina_small.jpg
+Whiteboard_Image carina01.jpg
+tour Carina_Nebula.tour
+<carina_sky.jpg>When looking up into the sky the Kuhreenah nebula looks like this photo next to me. On the wall you see a high-resolution false color image composed of 48 different photos taken by the Hubble Space Telescope. In this false color image Red shows sulfur, green shows hydrogen, and blue shows oxygen, making it easier to see the structure and components of the nebula.
+
+Data
+NameOnDisk orion_hst
+Name Orion_Nebula
+Size 18000 18000
+Scale 1.0
+Translate 0 20000
+Simulator_Image orion01.jpg
+Whiteboard_Image orion01.jpg
+tour Orion_Nebula.tour
+<orion01.jpg>This is Orion Nebula.
+
+Data
+NameOnDisk orion_spitzer_orions_inner_beauty
+Name Orion_Nebula_Spitzer
+Size 3220 6000
+Scale 1.0
+Translate 0 34000
+Simulator_Image orion_spitzer01.jpg
+Whiteboard_Image orion_spitzer01.jpg
+tour Orion_Spitzer.tour
+<orion_spitzer01.jpg>This is Orion Spitzer Nebula.
+
+Data
+NameOnDisk cdfs_hgast
+Name Hubble_Ultra_Deep_Field
+Size 32195 19464
+Scale 1.0
+Translate 27000 28000
+Simulator_Image cdfs_small.jpg
+Whiteboard_Image cdfs.jpg
+tour CDFS.tour
+<cdfs.jpg>The Hubble Ultra Deep Field is an image taken by the Chandra X-ray Observatory satellite. The image was created by compositing 11 individual ACIS-I exposures for a cumulative exposure time of over one million seconds, in the period 1999-2000.
+
+Data
+NameOnDisk Pntile
+Name Pntile
+Size 6810 3258
+Scale 1.0
+Translate 17000 15000
+Simulator_Image pntile01.jpg
+Whiteboard_Image pntile01.jpg
+tour pntile.tour
+<pntile01.jpg>This is PN Tile.
+
+Data
+NameOnDisk Startile
+Name Startile
+Size 6810 3258
+Scale 1.0
+Translate 27000 15000
+Simulator_Image startile01.jpg
+Whiteboard_Image startile01.jpg
+tour Startile.tour
+<startile01.jpg>This is Star Tile.
+
+Data
+NameOnDisk radioGalTile
+Name Radio_Galaxy_Tile
+Size 6860 4384
+Scale 1.0
+Translate 37000 15000
+Simulator_Image radioGalTile01.jpg
+Whiteboard_Image radioGalTile01.jpg
+tour Radio_Galaxy_Til.tour
+<radioGalTile01.jpg>This is Radio Galaxy Tile.
+
+Data
+NameOnDisk Arp256
+Name Arp256
+Size 3640 3640
+Scale 1.0
+Translate 32000 10000
+Simulator_Image arp25601.jpg
+Whiteboard_Image arp25601.jpg
+tour Arp256.tour
+<arp25601.jpg>This is Arp256 HST.
+
+Data
+NameOnDisk Eso69-6
+Name Eso69-6
+Size 3844 3844
+Scale 1.0
+Translate 23000 10000
+Simulator_Image eso69-6_01.jpg
+Whiteboard_Image eso69-6_01.jpg
+tour Eso69-6.tour
+<eso69-6_01.jpg>This is Eso69-6 HST.
+
+Data
+NameOnDisk  mars_PIA01907
+Name mars_PIA01907
+Size 22348 5771
+Scale 1.0
+Translate 30000 2000
+Simulator_Image mars_PI01907_01.jpg
+Whiteboard_Image mars_PI01907_01.jpg
+tour mars_PI01907.tour
+<mars_PI01907_01.jpg>This is Mars PIA01907.
+
+Data
+NameOnDisk mars_PIA09104
+Name mars_PI09104
+Size 18051 2348
+Scale 1.0
+Translate 30000 -5000
+Simulator_Image mars_PI09104_01.jpg
+Whiteboard_Image mars_PI09104_01.jpg
+tour mars_PI09104.tour
+<mars_PI09104_01.jpg>This is Mars PI09104.
+
+Data
+NameOnDisk Groth
+Name Groth
+Size 5600 40000
+Scale 1.0
+Translate 50000 15000
+Simulator_Image groth01.jpg
+Whiteboard_Image groth01.jpg
+tour Groth.tour
+<groth01.jpg>This is Groth HST.
+
+Data
+NameOnDisk Galacticcore
+Name Galacticcore
+Size 6149 2902
+Scale 1.0
+Translate 0 -10000
+Simulator_Image galacticcore01.jpg
+Whiteboard_Image galacticcore01.jpg
+tour Galacticcore.tour
+<galacticcore01.jpg>This is Galactic Core HST.
+
+Data
+NameOnDisk spitzer_glimpse
+Name Spitzer_Glimpse
+Size 27000 6000
+Scale 1.0
+Translate 30000 -12000
+Simulator_Image spitzer_glimpse01.jpg
+Whiteboard_Image spitzer_glimpse01.jpg
+tour Spitzer_Glimpse.tour
+<spitzer_glimpse01.jpg>This is Spitzer Glimpse.
+
+
+

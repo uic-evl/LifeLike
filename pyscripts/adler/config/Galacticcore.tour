@@ -1,0 +1,14 @@
+# Astronaut Application Tour Definition
+#	one tour file for each image set
+#		if you don't want to include this spot as interesting area leave name blank
+#	following single line for this tour spot
+#	can associate event tag inside speech string
+
+# Event Tag Notation
+# <nav x y zoom>	navigate to coordinate x y with given zoom value 
+# <move x y>			move (translate) to x y
+# <zoom value>			zoom to value
+# <image.jpg>			show image on whiteboard (any image file format)
+#						best resolution fit to whiteboard is 820 x 512
+# <pause seconds>		pause speech in seconds (can use float value)
+

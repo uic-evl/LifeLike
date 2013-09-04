@@ -1,0 +1,38 @@
+# Astronaut Application Tour Definition
+#	one tour file for each image set
+# 	define tour spot with name: xxx
+#	following single line for this tour spot
+#	can associate event tag inside speech string
+
+# Event Tag Notation
+# <nav x y zoom_value>	navigate to coordinate x y with given zoom value 
+# <move x y>			move (translate) to x y
+# <zoom value>			zoom to value
+# <image.jpg>			show image on whiteboard (any image file format)
+#						best resolution fit to whiteboard is 820 x 512
+# <pause seconds>		pause speech in seconds (can use float value)
+
+
+name: 
+<nav 0.0 0.0 2.3> <cdfs.jpg> <pause 1> The Chandra Deep Field South is one of the deepest images of the universe ever taken.  Deepest means that we are looking at a spot in the sky for a really, really long time.  This image was taken with the Hubble Space Telescope and it consists of long exposures made over hundreds of orbits.  <pause 1> What happens when we look deeply is that we can see really faint things. We can see faint objects that are nearby and bright objects that are very, very far away. <pause 1.5> When we look at this image we see lots of stuff. It turns out that most of the stuff we see in this image are galaxies.  Almost every speck in this image is a galaxy.  Except for some nearby stars.
+
+name: Big Star
+<nav 0.22051 -0.06425 21> <cdfs_star.jpg> <pause 2> Here is a big star. That's a star in our galaxy. It's probably hundreds, or thousands of light years away. But everything else, even the faintest little dots we can see, the ones we can barely make out, are galaxies.  Galaxies that are very far away.  Galaxies containing hundreds of billions of stars.
+
+name: Two Galaxy
+<nav 0.0 0.1 3> <cdfs_twogallaxy.jpg> <pause 2> When we look out very far, we are also looking very far back in time. When we look at a nearby galaxy, we may be looking several hundred million years or even a billion years into the past.  <zoom 25> But when we look at these tiny little specks we are looking many billions of years in the past.  In some cases we are looking most of the way back to the beginning of the universe. Another thing we see when we look really far back is that galaxies in the past don't look like they do today.  We see little pieces of galaxies, little fragments.  What we are seeing is structure in the formation of the universe.  The galaxy's gravity pulls matter together.  Those clouds come together to form galaxies and clusters of galaxies.  <move 0.096308 -0.019026> And we see those, little building blocks building up to big pretty galaxies like this beautiful spiral or this elliptical, or lenticular galaxy.
+
+name: Colliding Galaxy
+<nav -0.23704 0.125857 3> <cdfs_collide.jpg> <pause 1> Another thing we see if we look carefully, and zoom out a little bit, <pause 2.5> we see galaxies in the process of colliding with each other. <pause 1.5> Here's a big one, relatively nearby. <zoom 35> Let's zoom into that.  <pause 2> Here we see two massive galaxies just beginning to collide.  And you can see the trail of stars in between them.  These are stars ripped off by tidal forces as the galaxies pass close to each other. <zoom 10> When we look around this image, we can find many more cases of colliding galaxies.  <pause 1.5> In <move -0.0948 -0.01917> fact, as you look further back you see that these types of interactions aren't really rare at <zoom 28> all.
+
+name: Dancing Galaxy
+<nav -0.12425 -0.46351 50> <cdfs_interacting.jpg> <pause 2.5> Here is another interesting one.  <pause 2> You can see the distorted shapes of these paired galaxies <zoom 10> as they are dancing around each other.
+
+name: Ajar
+<nav -0.113 -0.4156 72> <cdfs_thin.jpg> <pause 2> This is a very interestingly shaped galaxy, here we see it ajar, <pause 1> <zoom 5> it might actually be two galaxies.
+
+name: Pair of Colliding Galaxy
+<nav 0.01 -0.34070 30> <cdfs_twopair.jpg> <pause 3> Here's another really nice pair of colliding galaxies. <pause 2> We can actually see a couple of pairs.  <pause 1.5> Right next to each other, you see the bent shapes and tidal tails?  And another one right over here just like it.  If we look carefully at it we see slightly different colors.  The Bottom one is orange, and the top one is more of a deeper red.  We are actually seeing the effect of Red Shift.  Our universe is expanding and as it expands light is actually stretched. The more distant it is, the more it is stretched.  This nearby galaxy is just slightly reddish. The top galaxy is further away and the light has been stretched so it has been shifted more into the red. We call that Red Shift.  By looking at the color of galaxies we can determine the distance to those galaxies.  The challenge is that we don't know what the natural color of a galaxy really is.  Some galaxies happen to be blue, and some galaxies happen to be red.  So we are mixing together the effect of the expansion of the universe which makes the galaxies more red with the color that they really are.  <zoom 15> But using those colors and the sizes and brightness we can actually make a pretty good guess about the distance of these galaxies.
+
+name: 
+<nav 0.0 0.0 2.3> <cdfs.jpg> <pause 1> This is the end of the tour of the Chandra Deep Field South Image. Feel free to navigate around and ask me questions.

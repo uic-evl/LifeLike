@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" initial="root">
+ <!-- http://commons.apache.org/scxml -->
+ <state id="root">
+  <transition event="test default" target="activityroot">
+  </transition>
+ </state>
+ <state id="activityroot">
+  <transition event="hi:hey how are you?:how are you doing?:howdy:hello" target="greeting">
+   <send namelist="Doing Great Thanks. By the way I am Prolix,I'm doing good. Do you want to hear a story?" event="speak">
+   </send>
+  </transition>
+ </state>
+ <state id="greeting">
+  <transition event="story:can you tell me a story?:tell me a story:story:let me hear it" target="genre">
+   <send namelist="I tell horror or adventure stories. which one do you want to hear?" event="speak">
+   </send>
+  </transition>
+ </state>
+ <state id="genre">
+  <transition event="horror story:a ghost story:horror:i'll go with horror" target="horror">
+   <send namelist="He will lie to confuse us. But he will also mix lies with the truth to attack us. The attack is psychological Damien and powerful. So don't listen to him. Remember that - do not listen. " event="speak">
+   </send>
+  </transition>
+  <transition event="adventure story:adventure it is:adventure:tell me an adventure story" target="adventure">
+   <send namelist="Mr. Sparrow you will accompany these fine men to the helm and provide us with the bearing to Isla de Muerta. You will then spend the remainder of the voyage contemplating all possible meanings of the phrase "silent as the grave". Do I make myself clear" event="speak">
+   </send>
+  </transition>
+ </state>
+ <state id="horror">
+ </state>
+ <state id="adventure">
+ </state>
+</scxml>

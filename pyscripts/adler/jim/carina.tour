@@ -1,0 +1,38 @@
+# Astronaut Application Tour Definition
+#	one tour file for each image set
+#		if you don't want to include this spot as interesting area leave name blank
+#	following single line for this tour spot
+#	can associate event tag inside speech string
+
+# Event Tag Notation
+# <nav x y zoom>	navigate to coordinate x y with given zoom value 
+# <move x y>			move (translate) to x y
+# <zoom value>			zoom to value
+# <image.jpg>			show image on whiteboard (any image file format)
+#						best resolution fit to whiteboard is 820 x 512
+# <pause seconds>		pause speech in seconds (can use float value)
+
+
+name:
+<nav 0.0 0.0 2.3> <pause 1> <carina_sky.jpg> On the display you can see a high-resolution false color image of the Kuhreenah Nebula. It is composed of 48 different photos taken by the Hubble Space Telescope. In this false color image Red shows sulfur, green shows hydrogen, and blue shows oxygen, making it easier to see the structure and components of the nebula.
+
+name: Eta Carinae
+<nav -0.2770 0.0030 15> <pause 2> This is Eta Carinae. <eta01.jpg> Eta Carinae is a highly variable hypergiant blue star that is 100 times the mass of our sun, 100 times the radius of our sun, and 4 million times more luminous. Eta Carinae is one of the most massive stars known. Only a few dozen stars in our galaxy are this large. In 1843, Eta Carinae exploded, briefly becoming one of the brightest stars in the southern sky, but the star survived. This explosion produced 2 lobes, and a large disk of expanding matter moving outwards at 1.5 million miles per hour. Each of the knots of ejected material are roughly the same size as our solar system. Eta Carinae is expected to explode again and become a supernova within the next million years. <eta02.jpg> Here is a composite image showing visible light in blue, X-Ray in orange from the hubble and Chandra telescopes. <zoom 5> In February 2008, evidence was found that Eta Carinae is actually a double star.
+
+name: Keyhole Nebula
+<nav -0.1680 -0.0100 10> <pause 2> This is the Keyhole Nebula. <keyhole01.jpg> The Keyhole Nebula is 7 light years in diameter. <keyhole02.jpg> Here is another photo of the Keyhole Nebula taken by the Hubble Space Telescope. The Keyhole Nebula is a small dark cloud of cold molecules and dust, containing bright filaments of hot, fluorescing gas, <zoom 5> silhouetted against the much brighter background nebula.
+
+name: Homunculus Nebula
+<nav -0.27643 0.014705 15> <pause 2>  <eta01.jpg> The Homunculus Nebula is an emission nebula surrounding the massive star Eta Carinae. The Homunculus is believed to have been ejected in an enormous outburst <zoom 5> from Eta Carinae which was visible from Earth back in 1843.
+
+name: Herbig-Halo Object
+<nav 0.2650 -0.0920 15> <pause 2> These are the Herbig Haro objects. <herbig.jpg> <pause 1> Herbig Haro objects, such as HD 666 are emission nebulae that result primarily from shocks in the outflowing jets from young stellar objects. These outflows are an integral part of the accretion process that is believed to form low- and intermediate-mass stars. Such jets give us a direct <zoom 5> indication that star formation is still occurring nearby.
+
+name: Trumpler 14
+<nav 0.1950 0.0880 10> <pause 2> <trumpler.jpg> The Trumpler 14 Star Cluster is a region of massive star formation in the Kuhreenah Nebula.
+
+name: HD 93250
+<nav 0.0060 -0.2320 15> <pause 2> HD 93250 is another giant blue star in the Kuhreenah Nebula. Because of its large size it will <zoom 5> have a very short lifetime.
+
+name:
+<nav 0.0 0.0 2> <pause 2> This is the end of the quick tour of the Kuhreenah Nebula. <pause 1> Please feel free to look around image using the joystick and let me know if you have any question. <carina01.jpg>
